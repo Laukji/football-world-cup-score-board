@@ -10,9 +10,9 @@ The class 'ScoreBoard' provides methods for:
 
 ## Assumptions and explanation
 * Moved updateScore to the Match model as it logically belongs to a Match. Could have it in the Scoreboard class but would
-* need an additional input parameter or two such as matchId/teamNames
+  need an additional input parameter or two such as matchId/teamNames
 
 * Used Integer as score type for null comparison and avoiding unboxing issues
 
 * Did not add any extra validation to teamName other than checking for null, so current implementation allows for team names such as "ARG" or "XYZ123".
-* If I were to add validation it would probably be through customized annotations ensuring the length and characters of the String input.
+  If I were to add validation it would probably be through customized annotations ensuring the length and characters of the String input.
