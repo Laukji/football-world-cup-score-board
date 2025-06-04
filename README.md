@@ -16,3 +16,7 @@ The class 'ScoreBoard' provides methods for:
 
 * Did not add any extra validation to teamName other than checking for null, so current implementation allows for team names such as "ARG" or "XYZ123".
   If I were to add validation it would probably be through customized annotations ensuring the length and characters of the String input.
+
+* Changed the tests slightly after second commit to account for a method now returning Optional. I also mixed up the ordering by recency so changed the     order slightly here.
+
+* Technically not necessary to throw a MissingTeamException if we try to finish a non-existing match, as it is a safe operation. It provides feedback to   the user that something in their process has gone wrong, but doing nothing or a simple logging message is probably sufficient 
